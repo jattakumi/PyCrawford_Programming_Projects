@@ -25,7 +25,7 @@ class Molecule:
 
     def read_coordinate_data(self):
         # Open and close the coordinate file
-        with open("/Users/jattakumi/Downloads/ProgrammingProjects-master/Project#02/input/h2o_geom.txt",
+        with open("filelocation/ProgrammingProjects-master/Project#02/input/h2o_geom.txt",
                   "r") as geomfile:
             data = np.array([line.split() for line in geomfile.readlines()][1:])
             self.atom_charges = np.array(data[:, 0], dtype=float).astype(int)

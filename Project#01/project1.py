@@ -28,7 +28,7 @@ class Molecule:
 
     def construct_from_dat_file(self):
         # Opening and closing the file
-        with open("/Users/jattakumi/Downloads/ProgrammingProjects-master/Project#01/input/allene.dat",
+        with open("file_location/Downloads/ProgrammingProjects-master/Project#01/input/allene.dat",
                   "r") as geom_file:
             data = np.array([line.split() for line in geom_file.readlines()][1:])
             self.atom_charges = np.array(data[:, 0], dtype=int)
